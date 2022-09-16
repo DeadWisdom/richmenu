@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rich-menu"
 version = "0.1.0"
-description = "A menu for console based interfaces based on the Rich python library"
+description = "A menu component for command line interfaces based on the Rich python library"
 authors = ["Brantley Harris <deadwisdom@gmail.com>"]
 license = "MIT"
 

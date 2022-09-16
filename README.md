@@ -1,6 +1,6 @@
 ### Rich Menu
 
-A menu for console based interfaces based on the [Rich python library](https://github.com/Textualize/rich/).
+A menu component for command line interfaces based on the [Rich python library](https://github.com/Textualize/rich/).
 
 ![Basic features of the menu](/doc/demo.gif)
 
