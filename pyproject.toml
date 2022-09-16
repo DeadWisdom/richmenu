@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rich-menu"
+version = "0.1.0"
+description = "A menu for console based interfaces based on the Rich python library"
+authors = ["Brantley Harris <deadwisdom@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.5.1"
+thefuzz = "^0.19.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.8.0", allow-prereleases = true}
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
