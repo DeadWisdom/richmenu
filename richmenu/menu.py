@@ -1,5 +1,5 @@
-from functools import cache
-from typing import Callable, Dict, Optional
+from functools import lru_cache
+from typing import Callable, Dict, List, Optional
 
 from thefuzz import fuzz, process
 from rich.live import Live
@@ -13,7 +13,7 @@ class QuitException(RuntimeError):
     pass
 
 
-@cache
+@lru_cache(maxsize=None)
 def fuzz_scorer(needle: str, option: str):
     """
     Scores how similar `neeedle` and `option` are...
@@ -34,10 +34,10 @@ def fuzz_scorer(needle: str, option: str):
     return score
 
 
-@cache
+@lru_cache(maxsize=None)
 def search_for_matches(
     needle: str,
-    haystacks: list[str],
+    haystacks: List[str],
     limit: int = 10,
     threshold: int = 46,
     scorer: Callable = fuzz_scorer,
