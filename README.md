@@ -46,4 +46,4 @@ manually for now.
 
 ## Python Support
 
-I have as yet only tested Python 3.10, if you need something else please open up a github issue.
+I have as yet only tested Python 3.7, if you need something else please open up a github issue.
